@@ -9,16 +9,17 @@
 <style type="text/css"><!--
 table {border:0px;margin:0 auto;border-collapse:collapse;}
 div#cc {text-align:center;}
-input#tx1 {font-family:monospace;font-size:24px;}
-input.key {width:32px;font-family:monospace;font-size:24px;}
-input.non {width:32px;font-family:monospace;font-size:24px;visibility:hidden;}
-input.bar {width:100px;font-family:monospace;font-size:24px;}
+div#result {text-align:center;font-size:40px;}
+input#tx1 {font-family:monospace;font-size:40px;}
+input.key {width:50px;font-family:monospace;font-size:40px;}
+input.non {width:50px;font-family:monospace;font-size:40px;visibility:hidden;}
+input.bar {width:100px;font-family:monospace;font-size:40px;}
 // --></style>
 </head>
 
 <body>
 
-<div id="result" align="center">
+<div id="result">
 	数字を入力してよね
 </div>
 
@@ -37,7 +38,7 @@ input.bar {width:100px;font-family:monospace;font-size:24px;}
 	<td><input type="button" class="key" value="7" onClick="keyEvent('7')"></td>
 	<td><input type="button" class="key" value="8" onClick="keyEvent('8')"></td>
 	<td><input type="button" class="key" value="9" onClick="keyEvent('9')"></td>
-	<td><input type="button" class="key" value="<" touchstart="oneClear()"></td>
+	<td><input type="button" class="key" value="<" onClick="oneClear()"></td>
 	<td><input type="button" class="key" value="C" onClick="allClear()"></td>
 </tr></table>
 
